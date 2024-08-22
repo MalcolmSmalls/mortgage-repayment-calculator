@@ -1,0 +1,166 @@
+html{
+    font-size: 16px;
+}
+
+body{
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 500;
+    color: hsl(202, 55%, 16%);
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, p, div {
+    margin: 0;
+    font-weight: 500;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+}
+
+/* TYPOGRAPHY */
+
+.form-label{
+    margin-bottom:.5em;
+    color: hsl(200, 24%, 40%);
+}
+
+
+.right-results{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+.results-title, .form-title{
+    font-size:1.4rem;
+    margin-bottom:.3em;
+}
+
+.results-paragraph, .results-title{
+    color: hsl(203, 41%, 72%);
+}
+
+.results-title{
+    color: hsl(0, 0%, 100%);
+}
+
+
+/* LAYOUT */
+
+.left-form, .flex-wrapper, .combined-input{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-div, .right-results{
+    padding: 2em;
+}
+.right-results{
+    padding-top:3em;
+    padding-bottom: 3em;
+    background: hsl(202, 55%, 16%);
+}
+
+.form-title, .radio-wrapper, .form-btn, .input-accent{
+    font-weight: 700;
+}
+
+.form-clear{
+    cursor: pointer;
+    margin-bottom: 1.5em;
+    align-self: start;
+    line-height:1.2;
+    border-bottom: 1px solid black;
+}
+
+.form-input{
+    border:1px solid hsl(200, 24%, 40%);
+    z-index: 20;
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    padding: 0;
+}
+
+.input-container{
+    position: relative;
+    height: 100%;
+    margin-bottom:2em;
+}
+
+.input-accent{
+
+    width: 2.3em;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    background-color: hsl(202, 86%, 94%);
+    z-index: 1;
+    width: max-content;
+    padding: 0 1em;
+}
+
+.accent-left{
+    left: 0;
+
+}
+.accent-right{
+    right: 0;
+}
+
+.radio-wrapper, .form-input{
+    height: 3.5em;
+}
+
+.radio-wrapper, .input-accent, .form-input{
+    border-radius:5px;
+}
+
+.radio-wrapper{
+    display: flex;
+    border: 1px solid hsl(202, 55%, 16%);
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+    padding-left:1em;
+}
+
+
+input[type="radio"]{
+    transform: scale(1.8)
+}
+
+.mb-md{
+    margin-bottom: 1.5em;
+}
+
+.form-btn, .radio-wrapper{
+    color: hsl(202, 55%, 16%)
+}
+
+.form-btn{
+    padding: 1.3em;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(61, 70%, 52%);
+    font-size:1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: .5em;
+    cursor: pointer;
+}
+
+.results-paragraph{
+    width: 96%;
+}
