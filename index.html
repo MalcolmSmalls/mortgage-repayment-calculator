@@ -53,29 +53,43 @@
         </div>
 
         
-        <label class="form-label" for="type">Mortgage Type</label>
-        <div class="radio-wrapper">
+        <span class="form-label">Mortgage Type</span>
+        <label for="repayment" class="radio-wrapper">
           <label class="radio-label">
-            <input class="form-type" name="mortgageType" type="radio" id="type" value="repayment" required>
-            <!-- <span>Repayment</span> -->
+            <input class="form-type" name="mortgageType" type="radio" id="repayment" value="repayment" required>
             <span class="check"></span>
           </label>
-        </div>
-        <div class="radio-wrapper mb-md">
+          <span for="repayment">Repayment</span>
+        </label>
+        <label class="radio-wrapper mb-md">
           <label class="radio-label">
-            <input class="form-type" name="mortgageType" type="radio" id="type" value="interest-only" required>
-            <!-- <span>Interest Only</span> -->
+            <input class="form-type" name="mortgageType" type="radio" id="interest-type" value="interest-only" required>
             <span class="check"></span>
           </label>
-        </div>
+          <span for="interest-type">Interest Only</span>
+        </label>
         <button class="form-btn" type="submit"><img src="./assets/images/icon-calculator.svg" alt="calculator icon">Calculate Repayments</button>
      </form>
     </div>
     <div class="right-results">
-      <img src="./assets/images/illustration-empty.svg" alt="floating calculator illustration with other symbols of finance">
-      <h2 class="results-title">Results shown here</h2>
-      <p class="results-paragraph">Complete the form and click “calculate repayments” to see what 
-        your monthly repayments would be.</p>
+      <!-- <div class="unsubmitted">
+
+        <img src="./assets/images/illustration-empty.svg" alt="floating calculator illustration with other symbols of finance">
+        <h2 class="results-title">Results shown here</h2>
+        <p class="results-paragraph">Complete the form and click “calculate repayments” to see what 
+          your monthly repayments would be.</p>
+      </div> -->
+      <div class="submitted">
+        <h2 class="results-title">Your results</h2>
+        <p class="results-paragraph">Your results are shown below based on the information you provided. 
+          To adjust the results, edit the form and click “calculate repayments” again.</p>
+        <div class="results-stats-wrapper">
+          <h3 class="results-stats-subtitle">Your monthly repayments</h3>
+          <h2 class="results-stats-monthly">£1,797.74</h2>
+          <h3 class="results-stats-subtitle">Total you'll repay over the term</h3>
+          <h2 class="results-stats-terms">£539,322.96</h2>
+        </div>
+      </div>
     </div>
 
   </div>
