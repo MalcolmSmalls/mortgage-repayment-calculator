@@ -7,6 +7,7 @@ html{
 }
 
 body{
+    background-color: hsl(202, 86%, 94%);
     margin: 0;
     display:flex;
     flex-direction: column;
@@ -14,6 +15,10 @@ body{
     font-weight: 500;
     color: hsl(202, 55%, 16%);
     line-height: 1.7;
+}
+
+.left-div{
+    background-color: white;
 }
 
 h1, h2, h3, h4, h5, p, div {
@@ -25,6 +30,22 @@ img {
     display: inline-block;
     max-width: 100%;
 }
+
+@media (min-width: 1100px) {
+  html{
+    font-size:18px
+  }
+
+  .container{
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .right-results{
+    border-bottom-left-radius: 100px;
+  }
+}
+
 
 /* TYPOGRAPHY */
 
@@ -261,4 +282,88 @@ input[type="radio"]{
   height:1px;
   background-color: hsl(202, 55%, 20%);
   margin: .3em 0;
+}
+
+@media (min-width:1100px){
+    body{
+        min-height:100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        width: 70vw;
+        min-height: 100%;
+        background-color: white;
+
+    }
+
+    .left-div, .right-results{
+        width: 50%;
+    }
+
+    .left-div, .submitted{
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .right-results{
+        padding-top: 0;
+    }
+
+    .flex-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap:1em;
+    }
+
+    .title-wrapper{
+        line-height: 0;
+        justify-content: space-between;
+        margin-bottom:3em;
+    }
+
+    .form-clear, .form-title{
+        margin: 0;
+    }
+
+    .form-btn{
+        align-self: flex-start;
+        padding: 1.3em 2.5em;
+        /* width: 60%; */
+    }
+
+    .right-results{
+        padding: 2em;
+        margin: 0;
+    }
+    .results-title{
+        line-height:0;
+        margin-bottom: 2em;
+    }
+    .form-clear{
+        line-height: 0;
+        padding-bottom:.6em;
+        padding-top:.1em;
+    }
+    .results-stats-wrapper{
+        margin-top: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .unsubmitted{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .results-stats-monthly::after{
+        margin: .8em 0;
+    }
+    
 }
