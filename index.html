@@ -29,14 +29,14 @@
 
         <label class="form-label" for="amount">Mortgage Amount</label>
         <div class="input-container">
-          <input class="form-input form-amount" name="mortgageAmount" type="number" id="amount" required>
+          <input class="form-input form-amount input-padding-left" name="mortgageAmount" type="text" id="amount" pattern='[0-9]' required>
           <div class="input-accent accent-left">£</div>
         </div>
         <div class="flex-wrapper">
           <div class="combined-input">
             <label class="form-label" for="term">Mortgage Term</label>
             <div class="input-container">
-              <input class="form-input form-term" name="mortgageTerm" type="number" id="term" required>
+              <input class="form-input form-term input-padding-right" name="mortgageTerm" type="text" id="term" maxlength="3" required>
               <div class="input-accent accent-right">years</div>
             </div>
           </div>
@@ -44,7 +44,7 @@
           <div class="combined-input">
             <label class="form-label" for="interest">Interest Rate</label>
             <div class="input-container">
-              <input class="form-input form-interest" name="interestRate" type="number" id="interest" required>
+              <input class="form-input form-interest input-padding-right" name="interestRate" type="text" id="interest" required>
               <div class="input-accent accent-right">%</div>
             </div>
           </div>
@@ -55,10 +55,18 @@
         
         <label class="form-label" for="type">Mortgage Type</label>
         <div class="radio-wrapper">
-          <input class="form-type" name="mortgageType" type="radio" id="type" value="repayment" required>Repayment
+          <label class="radio-label">
+            <input class="form-type" name="mortgageType" type="radio" id="type" value="repayment" required>
+            <!-- <span>Repayment</span> -->
+            <span class="check"></span>
+          </label>
         </div>
         <div class="radio-wrapper mb-md">
-          <input class="form-type" name="mortgageType" type="radio" id="type" value="interest-only" required>Interest Only
+          <label class="radio-label">
+            <input class="form-type" name="mortgageType" type="radio" id="type" value="interest-only" required>
+            <!-- <span>Interest Only</span> -->
+            <span class="check"></span>
+          </label>
         </div>
         <button class="form-btn" type="submit"><img src="./assets/images/icon-calculator.svg" alt="calculator icon">Calculate Repayments</button>
      </form>
