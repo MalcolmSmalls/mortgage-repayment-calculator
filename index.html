@@ -29,8 +29,8 @@
 
         <label class="form-label" for="amount">Mortgage Amount</label>
         <div class="input-container">
-          <input class="form-input form-amount input-padding-left error-input" name="mortgageAmount" type="text" id="amount" pattern='[0-9]' required>
-          <div class="input-accent accent-left error-input-accent">£</div>
+          <input class="form-input form-amount input-padding-left" name="mortgageAmount" type="text" id="amount" pattern='[0-9]' required>
+          <div class="input-accent accent-left">£</div>
         </div>
         <!-- <p class="error-message">This field is required</p> -->
         <div class="flex-wrapper">
@@ -55,14 +55,14 @@
 
         
         <span class="form-label">Mortgage Type</span>
-        <label for="repayment" class="radio-wrapper">
+        <label for="repayment" class="radio-wrapper" data-option="repayment">
           <label class="radio-label">
             <input class="form-type" name="mortgageType" type="radio" id="repayment" value="repayment" required>
             <span class="check"></span>
           </label>
           <span for="repayment">Repayment</span>
         </label>
-        <label class="radio-wrapper mb-md active-radio">
+        <label class="radio-wrapper mb-md" data-option="interest">
           <label class="radio-label">
             <input class="form-type" name="mortgageType" type="radio" id="interest-type" value="interest-only" required>
             <span class="check"></span>
@@ -111,6 +111,6 @@
   Total you'll repay over the term -->
 
   
-
+<script src="script.js"></script>
 </body>
 </html>
