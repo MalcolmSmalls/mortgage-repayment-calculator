@@ -284,6 +284,19 @@ input[type="radio"]{
   margin: .3em 0;
 }
 
+.active-radio{
+    border: 2px solid hsl(61, 70%, 72%);
+    background-color: hsl(61, 70%, 92%);
+}
+
+.active-input{
+    border: 2px solid hsl(61, 70%, 72%);
+}
+
+.active-input-icon{
+    background-color:  hsl(61, 70%, 72%);
+}
+
 @media (min-width:1100px){
     body{
         min-height:100vh;
