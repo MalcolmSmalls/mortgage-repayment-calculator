@@ -290,6 +290,7 @@ input[type="radio"]{
 }
 
 .active-input{
+    outline: none;
     border: 2px solid hsl(61, 70%, 52%);
 }
 

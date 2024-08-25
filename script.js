@@ -1,4 +1,4 @@
-const radioWrapper = document.querySelector('.radio-wrapper')
+const textInputs = document.querySelectorAll('.form-input')
 
 const repaymentWrapper = document.querySelector('[data-option="repayment"]')
 const interestWrapper = document.querySelector('[data-option="interest"]')
@@ -14,6 +14,28 @@ document.addEventListener('change', (e)=>{
         repaymentWrapper.classList.remove('active-radio')
     }
 })
+
+clearActiveInputs()
+
+
+
+function clearActiveInputs(){
+    for(let i = 0; i < textInputs.length; i++){
+        textInputs[i].classList.remove('active-input')
+        textInputs[i].nextSibling.nextSibling.classList.remove('active-input-icon')
+    }
+}
+
+for(let i = 0; i < textInputs.length; i++){
+    textInputs[i].addEventListener('focus', e =>{
+    
+        e.target.classList.add('active-input')
+        e.target.nextSibling.nextSibling.classList.add('active-input-icon')
+    })
+    textInputs[i].addEventListener('focusout', e => {
+        clearActiveInputs()
+    })
+}
 
 
 
