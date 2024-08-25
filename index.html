@@ -29,9 +29,10 @@
 
         <label class="form-label" for="amount">Mortgage Amount</label>
         <div class="input-container">
-          <input class="form-input form-amount input-padding-left" name="mortgageAmount" type="text" id="amount" pattern='[0-9]' required>
-          <div class="input-accent accent-left">£</div>
+          <input class="form-input form-amount input-padding-left error-input" name="mortgageAmount" type="text" id="amount" pattern='[0-9]' required>
+          <div class="input-accent accent-left error-input-accent">£</div>
         </div>
+        <!-- <p class="error-message">This field is required</p> -->
         <div class="flex-wrapper">
           <div class="combined-input">
             <label class="form-label" for="term">Mortgage Term</label>

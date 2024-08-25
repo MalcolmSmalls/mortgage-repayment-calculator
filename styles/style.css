@@ -285,16 +285,31 @@ input[type="radio"]{
 }
 
 .active-radio{
-    border: 2px solid hsl(61, 70%, 72%);
+    border: 2px solid hsl(61, 70%, 52%);
     background-color: hsl(61, 70%, 92%);
 }
 
 .active-input{
-    border: 2px solid hsl(61, 70%, 72%);
+    border: 2px solid hsl(61, 70%, 52%);
 }
 
 .active-input-icon{
-    background-color:  hsl(61, 70%, 72%);
+    background-color:  hsl(61, 70%, 52%);
+}
+
+.error-input{
+    border:2px solid hsl(4, 69%, 50%);
+}
+
+.error-input-accent{
+    background-color: hsl(4, 69%, 50%);
+    color: white;
+}
+
+.error-message{
+    color: hsl(4, 69%, 50%);
+    margin-top:-1em;
+    margin-bottom: 1.5em;
 }
 
 @media (min-width:1100px){
